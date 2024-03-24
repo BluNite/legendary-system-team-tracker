@@ -34,11 +34,11 @@
 5. [Authors](#authors%20and %20acknowledgements)
 
 ## About
-
-
-A command line application for a software engineering team. the user is prompted to input information about team members including ID, email, GitHub user URL, and office number. The user has the option to add 
+```
+A command line application for a software engineering team. The user is prompted to input information about team members including ID, email, GitHub user URL, and office number. The user has the option to add 
 any number of interns, and engineers. After exiting the application, the data is rendered to an HTML file.
----
+```
+
 
 ## User Story
 ```
