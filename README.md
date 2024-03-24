@@ -4,7 +4,7 @@
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg) https://opensource.org/licenses/MPL-2.0
 
-[A deployed version of this project can be viewed here:]()
+
 
 ---
 
