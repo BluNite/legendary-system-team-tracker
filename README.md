@@ -1,6 +1,6 @@
 # Team Tracker
 
-This project is a tool to organize and store team info on an engineering team.
+
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg) https://opensource.org/licenses/MPL-2.0
 
@@ -35,7 +35,7 @@ This project is a tool to organize and store team info on an engineering team.
 
 ## About
 
-takes input from user to generate a cli application that produces cards so store team info
+
 
 ---
 
