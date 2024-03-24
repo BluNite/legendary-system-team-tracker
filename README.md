@@ -40,7 +40,13 @@
 ---
 
 ## User Story
+```
+As a manager
+I need to generate an HTML page that displays my team's basic information
+such as email, ID, office number, and GitHub link.
 
+
+```
 ## Acceptance Criteria
 
 ```GIVEN a CLI application that accepts user input
