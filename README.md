@@ -61,13 +61,21 @@ WHEN I've completed entering the team manager's name, ID, email, and GitHub user
 Then I am prompted to enter the engineer's name, ID, email, and GitHub username, and when finished, returned to the menu
 WHEN I select the intern option
 THEN I am given a prompt to submit the intern's name, ID, email, and school, and I am returned to the menu
-WHEN I decide to complete submitting my team's information
-THEN I am able to exit the program, and the HTML file is produced
+WHEN I have completed submitting my team's information
+THEN I can exit the program, and an HTML file is produced
 ```
 
 ## Visuals
 
-<img src ="images/Screenshot (20).png" width="450px" />
+
+  <dl>
+    <dl>
+      <dl>
+          <dl <dd><img src ="images/Screenshot (20).png" width="750px" /></dd></dl>
+        </dl>
+      </dl>
+    </dl>
+
 
 ## Build
 
