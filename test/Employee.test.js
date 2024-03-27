@@ -41,13 +41,20 @@ test("Should get name using getName()", () => {
 // test should produce 'id' using getId() --check passed test
 test("Should get 'id' using getId()", () => {
 	const testVal = 55;
-	const e = new Employee(testVal);
+	const e = new Employee("Fizz", testVal);
 	expect(e.getId()) === (testVal);
 });
 
 // test should produce 'email' using getMail() --check passed test
 test("Should get 'email' using getEmail()", () => {
 	const testVal = "MacTheFry@fakeMail.com";
-	const e = new Employee(testVal);
+	const e = new Employee("FIzz", 50, testVal);
+	expect(e.getEmail()) === (testVal);
+});
+
+// test should produce 'getRole' using getRole() --check passed test
+test("Should return /'Employee'/ using getRole()", () => {
+	const testVal = "Employee";
+	const e = new Employee("Fizz", "MacTheFry@fakeMail.com", 50);
 	expect(e.getEmail()) === (testVal);
 });
