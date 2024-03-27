@@ -52,9 +52,9 @@ test("Should get 'email' using getEmail()", () => {
 	expect(e.getEmail()) === (testVal);
 });
 
-// test should produce 'getRole' using getRole() --check passed test
+// test should produce role using getRole() --check passed test
 test("Should return /'Employee'/ using getRole()", () => {
 	const testVal = "Employee";
 	const e = new Employee("Fizz", "MacTheFry@fakeMail.com", 50);
-	expect(e.getEmail()) === (testVal);
+	expect(e.getRole()) === (testVal);
 });
