@@ -68,9 +68,7 @@ THEN I can exit the program, and an HTML file is produced
 
 ## Visuals
 
-<<<<<<< HEAD
-&ensp; <img src ="images/Screenshot (20).png" width="450px" />
-=======
+
 
   <dl>
     <dl>
@@ -80,7 +78,7 @@ THEN I can exit the program, and an HTML file is produced
       </dl>
     </dl>
 
->>>>>>> 9c8f3db73f1fbb1bce9f59abe95beb9b60efd96b
+
 
 ## Build
 
