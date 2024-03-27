@@ -61,7 +61,7 @@ THEN I am able to exit the program, and the HTML file is produced
 
 ## Visuals
 
-<img src ="images/Screenshot (20).png" width="450px" />
+&ensp; <img src ="images/Screenshot (20).png" width="450px" />
 
 ## Build
 

@@ -1,0 +1,26 @@
+{
+  "name": "legendary-system-team-tracker",
+  "version": "1.0.0",
+  "description": "This project is a tool to organize and store team info on an engineering team.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --verbose test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BluNite/legendary-system-team-tracker.git"
+  },
+  "author": "bluNite Nkenge Crowe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BluNite/legendary-system-team-tracker/issues"
+  },
+  "homepage": "https://github.com/BluNite/legendary-system-team-tracker#readme",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
