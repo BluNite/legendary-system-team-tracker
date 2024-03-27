@@ -22,5 +22,8 @@
   "homepage": "https://github.com/BluNite/legendary-system-team-tracker#readme",
   "dependencies": {
     "jest": "^29.7.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
