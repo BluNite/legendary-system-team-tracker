@@ -1,10 +1,10 @@
-# Team Tracker
+# Team Profile Generator
 
 
 
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg) https://opensource.org/licenses/MPL-2.0
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg) [License:MIT](https://opensource.org/licenses/MPL-2.0)
 
-
+![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
 
 ---
 
@@ -34,13 +34,20 @@
 5. [Authors](#authors%20and %20acknowledgements)
 
 ## About
+```
+A command line application for a software engineering team. The user is prompted to input information about team members including ID, email, GitHub user URL, and office number. The user has the option to add 
+any number of interns, and engineers. After exiting the application, the data is rendered to an HTML file.
+```
 
-
-
----
 
 ## User Story
+```
+As a manager
+I need to generate an HTML page that displays my team's basic information
+such as email, ID, office number, and GitHub link.
 
+
+```
 ## Acceptance Criteria
 
 ```GIVEN a CLI application that accepts user input
@@ -55,13 +62,21 @@ WHEN I've completed entering the team manager's name, ID, email, and GitHub user
 Then I am prompted to enter the engineer's name, ID, email, and GitHub username, and when finished, returned to the menu
 WHEN I select the intern option
 THEN I am given a prompt to submit the intern's name, ID, email, and school, and I am returned to the menu
-WHEN I decide to complete submitting my team's information
-THEN I am able to exit the program, and the HTML file is produced
+WHEN I have completed submitting my team's information
+THEN I can exit the program, and an HTML file is produced
 ```
 
 ## Visuals
 
-<img src ="images/Screenshot (20).png" width="450px" />
+
+  <dl>
+    <dl>
+      <dl>
+          <dl <dd><img src ="images/Screenshot (20).png" width="750px" /></dd></dl>
+        </dl>
+      </dl>
+    </dl>
+
 
 ## Build
 
@@ -73,8 +88,8 @@ Go to GitHub.com and navigate to the main page of the repository. Then, click <>
 
 - License used for this project: MIT
 
-  - 'Choose A License.com', for more information about the licensing of this project
-  - ![choose a license](https://choosealicense.com)
+  - `Choose A License.com` for more information about the licensing of this project: [choosealicense](https://choosealicense.com)
+  
 
 ## Contributing
 
