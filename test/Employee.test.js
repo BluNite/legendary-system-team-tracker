@@ -40,7 +40,7 @@ test("Should get name using getName()", () => {
 
 // test should produce 'id' using getId()
 test("Should get 'id' using getId()", () => {
-	const testVal = "Bob";
+	const testVal = 55;
 	const e = new Employee(testVal);
-	expect(e.getName()) === (testVal);
+	expect(e.getId()) === (testVal);
 });
