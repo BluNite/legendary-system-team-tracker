@@ -38,9 +38,16 @@ test("Should get name using getName()", () => {
 	expect(e.getName()) === (testVal);
 });
 
-// test should produce 'id' using getId()
+// test should produce 'id' using getId() --check passed test
 test("Should get 'id' using getId()", () => {
 	const testVal = 55;
 	const e = new Employee(testVal);
 	expect(e.getId()) === (testVal);
+});
+
+// test should produce 'email' using getMail() --check passed test
+test("Should get 'email' using getEmail()", () => {
+	const testVal = "MacTheFry@fakeMail.com";
+	const e = new Employee(testVal);
+	expect(e.getEmail()) === (testVal);
 });
