@@ -1,0 +1,65 @@
+<!--TeamCardManager--------->
+<div class="card m-5 text-bg-light border-primary team-card col-sm-3">
+  <div class="card text-center">
+    <!--Header-->
+    <div class="card-header">
+      <!--card-->
+      <div class="card">
+        <!--card body-->
+        <div class="manTitle card-body">
+          <!--Team Member Title-->
+          <h6 class="card-title text-white fs-4 fw-bolder card-subtitle">
+            {{ name }}
+          </h6>
+        </div>
+      </div>
+      <!--card --info-->
+      <div class="card">
+        <!--card body-->
+        <div class="card-body">
+          <!--Card title Position-->
+          <h2 class="card-title">
+            <i class="fa fa-coffee" aria-hidden="true"></i>&nbsp;{{ role }}
+          </h2>
+        </div>
+
+        <!--card body team member name-->
+        <div class="card-body">
+          <!--team member name text-->
+          <p class="card-text fs-3 fw-bolder"></p>
+        </div>
+      </div>
+    </div>
+    <!--card body for list-->
+    <div class="card-body">
+      <!--ul here-->
+
+      <ul class="list-group">
+        <!--Id-->
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+        >
+          ID:
+          <!--span ID-->
+          <span class="badge bg-primary rounded-pill">{{ id }}</span>
+        </li>
+        <!---->
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+        >
+          Email:
+
+          <a href="mailto:{{ emai; }}">
+            <span class="badge bg-primary rounded-pill">{{ email }} </span></a
+          >
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+        >
+          Office number:
+          <span class="badge bg-primary rounded-pill">{{ officeNumber }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

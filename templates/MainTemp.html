@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Team Profile Generator</title>
+
+    <!--Bootstrap cdn here-->
+    <link rel="stylesheet" href="../output/style.css" />
+    <!--bootstrap5 css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!--font awesome-->
+    <script
+      src="https://kit.fontawesome.com/ada6d9a32c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <!--body-->
+  <body>
+    <div class="jumbotron header text-center text-bg-primary">
+      <h1 class="titleHeader">My Team</h1>
+    </div>
+    <!--container-->
+    <div class="container">
+      <!--row-->
+      <div class="p-2 mt-2 row">
+        <div
+          class="mt-auto team-section row ${1| ,d-flex,row-cols-12,row-cols-12, auto,justify-content-center,|}"
+        >
+          {{ team }}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

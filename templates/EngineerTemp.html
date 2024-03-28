@@ -1,0 +1,62 @@
+<!--TeamCard--------------------->
+<div class="card m-5 border-primary employee-card col-sm-3">
+  <div class="card text-center">
+    <!--Header-->
+    <div class="card-header">
+      <!--card-->
+      <div class="card">
+        <!--card body-->
+        <div class="bg-primary card-body">
+          <!--Team Member Title-->
+          <h6 class="card-title text-white fs-2 fw-bolder card-subtitle">
+            {{ name }}
+          </h6>
+        </div>
+      </div>
+      <!--card --info-->
+      <div class="card">
+        <!--card body-->
+        <div class="card-body">
+          <!--Card title Position-->
+          <h2 class="card-title">
+            <i class="fa fa-glasses" aria-hidden="true"></i>&nbsp;{{ role }}
+          </h2>
+        </div>
+        <!--card picture/image-->
+        <a class="card-text fs-3 fw-bolder">{{ github }}</a>
+        <img
+          src="./HD-wallpaper-github-blue-logo-blue-brickwall-github-logo-social-networks-github-neon-logo-github.jpg"
+          alt="github logo neon blue"
+        />
+        <!--card body team member name-->
+        <div class="card-body">
+          <!--team member name text-->
+        </div>
+      </div>
+    </div>
+    <!--card body for list-->
+    <div class="card-body">
+      <!--ul here-->
+      <ul class="list-group">
+        <!--Id-->
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+        >
+          ID: {{ id }}
+          <!--span ID-->
+          <span class="badge bg-primary rounded-pill">143</span>
+        </li>
+        <!---->
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center"
+        >
+          Email:
+
+          <a href="mailto:{{ email }}">
+            <span class="badge bg-primary rounded-pill">{{ email }} </span></a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
