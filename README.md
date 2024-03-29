@@ -120,4 +120,5 @@ To run a test in terminal/ git bash
 ## Contact Information
 
 - GitHub Username:BluNite
-- Email ![email](ncrowe175@gmail.com)
+  
+ - Email: ncrowe175@gmail.com
