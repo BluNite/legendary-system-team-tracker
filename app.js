@@ -6,7 +6,7 @@ const inquirer = require('inquirer');
 
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
-
+const Intern = require("./lib/Intern");
 
 // use Inquire to create collect team member info
 // create objects for team member 
@@ -15,7 +15,8 @@ const teamData = [];
 function startIntake() {
 	// start manager input
 	//managerIntake();
-	engineerIntake();
+	internIntake();
+
 };
 /* Manager inquire intake
 function managerIntake() {
@@ -102,7 +103,41 @@ function engineerIntake() {
 
 };
 
-
+function internIntake() {
+	inquirer
+		.prompt([
+			{
+				type: "input",
+				name: "name",
+				message: "What is Intern's name?",
+			},
+			{
+				type: "input",
+				name: "id",
+				message: "What is Intern's ID number",
+			},
+			{
+				type: "input",
+				name: "email",
+				message: "What is Intern's email address?",
+			},
+			{
+				type: "input",
+				name: "school",
+				message: "What school did Intern attend or is presently enrolled?"
+			},
+		])
+		.then((val) => {
+			// ref Intern constructor
+			const intern = new Intern(val.name, val.id, val.email, val.school);
+			//create table
+			console.table(intern);
+			// push intern to teamDAta object
+			teamData.push(intern);
+			//check in console
+			console.log(teamData);
+		});
+}
 
 // invoke for intake start inquirer
 startIntake();
