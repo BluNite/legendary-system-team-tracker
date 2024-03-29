@@ -31,20 +31,19 @@
 
 ## About
 
-```
-A command line application for a software engineering team. The user is prompted to input information about team members including ID, email, GitHub user URL, and office number. The user has the option to add
+```A command line application for a software engineering team. The user is prompted to input information about team members including ID, email, GitHub user URL, and office number. The user has the option to add
 any number of interns, and engineers. After exiting the application, the data is rendered to an HTML file.
 ```
 
 ## User Story
 
-```
+---
+
 As a manager
 I need to generate an HTML page that displays my team's basic information
 such as email, ID, office number, and GitHub link.
 
-
-```
+---
 
 ## Acceptance Criteria
 
@@ -103,13 +102,11 @@ Following a code review, your feature will be merged.
 
 ## Tests
 
-Testing used: Jest
-
-To run a test in terminal/ git bash
-
-type: npm run test
-
----
+```-
+ Testing used: Jest
+-To run test in terminal/ git bash
+- type: npm run test
+```
 
 ## Authors and Acknowledgements
 
@@ -118,4 +115,4 @@ Made with :blue_heart: by Nkenge Crowe (BluNite)
 ## Contact Information
 
 - GitHub Username:BluNite
-- Email: ncrowe175@gmail.com
+- Email:ncrowe175@gmail.com
