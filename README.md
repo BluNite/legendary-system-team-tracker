@@ -29,7 +29,6 @@
 3. [Contributing](#contributing)
 4. [Tests](#tests)
 
-
 ## About
 
 ```
@@ -104,21 +103,19 @@ Following a code review, your feature will be merged.
 
 ## Tests
 
- Testing used: Jest
+Testing used: Jest
 
 To run a test in terminal/ git bash
 
- type: npm run test
+type: npm run test
 
 ---
 
 ## Authors and Acknowledgements
-Made with :blue_heart: by Nkenge Crowe (BluNite)
 
+Made with :blue_heart: by Nkenge Crowe (BluNite)
 
 ## Contact Information
 
-
 - GitHub Username:BluNite
-  
- - Email: ncrowe175@gmail.com
+- Email: ncrowe175@gmail.com

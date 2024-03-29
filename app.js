@@ -50,11 +50,14 @@ function managerIntake() {
 				val.email,
 				val.officeNumber
 			);
+			// table for manager intake
 			console.table(manager);
+			// add manager data to 'teamData obj.
 			teamData.push(manager);
 			//check for teamData in console
 			console.log(teamData);
 		})
 };
+// invoke for intake start inquirer
 startIntake();
 
