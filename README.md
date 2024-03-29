@@ -29,7 +29,7 @@
 2. [License](#license)
 3. [Contributing](#contributing)
 4. [Tests](#tests)
-5. [Authors](#authors%20and %20acknowledgements)
+
 
 ## About
 
@@ -114,9 +114,9 @@ To run a test in terminal/ git bash
 ---
 
 ## Authors and Acknowledgements
-
-## Nkenge Crowe (BluNite)
-
+---
+ Nkenge Crowe (BluNite)
+---
 ## Contact Information
 
 - GitHub Username:BluNite
