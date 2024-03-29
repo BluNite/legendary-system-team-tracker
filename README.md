@@ -22,7 +22,6 @@
   - [Contributing](#contributing)
   - [Tests](#tests)
   - [Authors and Acknowledgements](#authors-and-acknowledgements)
-  - [Nkenge Crowe (BluNite)](#nkenge-crowe-blunite)
   - [Contact Information](#contact-information)
 
 1. [Installation](#installation)
@@ -114,10 +113,11 @@ To run a test in terminal/ git bash
 ---
 
 ## Authors and Acknowledgements
----
- Nkenge Crowe (BluNite)
----
+Made with :blue_heart: by Nkenge Crowe (BluNite)
+
+
 ## Contact Information
+
 
 - GitHub Username:BluNite
   
