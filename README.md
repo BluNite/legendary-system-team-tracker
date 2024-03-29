@@ -1,7 +1,5 @@
 # Team Profile Generator
 
-
-
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg) [License:MIT](https://opensource.org/licenses/MPL-2.0)
 
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
@@ -12,7 +10,7 @@
 
 1. [About](#about)
 
-- [Team Tracker](#team-tracker)
+- [Team Profile Generator](#team-profile-generator)
   - [Contents](#contents)
   - [About](#about)
   - [User Story](#user-story)
@@ -34,13 +32,14 @@
 5. [Authors](#authors%20and %20acknowledgements)
 
 ## About
+
 ```
-A command line application for a software engineering team. The user is prompted to input information about team members including ID, email, GitHub user URL, and office number. The user has the option to add 
+A command line application for a software engineering team. The user is prompted to input information about team members including ID, email, GitHub user URL, and office number. The user has the option to add
 any number of interns, and engineers. After exiting the application, the data is rendered to an HTML file.
 ```
 
-
 ## User Story
+
 ```
 As a manager
 I need to generate an HTML page that displays my team's basic information
@@ -48,6 +47,7 @@ such as email, ID, office number, and GitHub link.
 
 
 ```
+
 ## Acceptance Criteria
 
 ```GIVEN a CLI application that accepts user input
@@ -68,8 +68,6 @@ THEN I can exit the program, and an HTML file is produced
 
 ## Visuals
 
-
-
   <dl>
     <dl>
       <dl>
@@ -77,8 +75,6 @@ THEN I can exit the program, and an HTML file is produced
         </dl>
       </dl>
     </dl>
-
-
 
 ## Build
 
@@ -91,7 +87,6 @@ Go to GitHub.com and navigate to the main page of the repository. Then, click <>
 - License used for this project: MIT
 
   - `Choose A License.com` for more information about the licensing of this project: [choosealicense](https://choosealicense.com)
-  
 
 ## Contributing
 
@@ -110,6 +105,12 @@ Following a code review, your feature will be merged.
 
 ## Tests
 
+- Test used: Jest
+
+To run test in terminal/ git bash
+
+- in the console/terminal type: npm run test
+
 ---
 
 ## Authors and Acknowledgements
@@ -119,4 +120,4 @@ Following a code review, your feature will be merged.
 ## Contact Information
 
 - GitHub Username:BluNite
-- Email:ncrowe175@gmail.com
+- Email ![email](ncrowe175@gmail.com)
