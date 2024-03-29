@@ -105,11 +105,11 @@ Following a code review, your feature will be merged.
 
 ## Tests
 
-- Test used: Jest
+ Testing used: Jest
 
 To run a test in terminal/ git bash
 
--  type: npm run test
+ type: npm run test
 
 ---
 
