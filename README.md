@@ -107,9 +107,9 @@ Following a code review, your feature will be merged.
 
 - Test used: Jest
 
-To run test in terminal/ git bash
+To run a test in terminal/ git bash
 
-- in the console/terminal type: npm run test
+-  type: npm run test
 
 ---
 
