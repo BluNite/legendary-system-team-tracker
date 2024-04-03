@@ -3,143 +3,155 @@ const fs = require('fs');
 const path = require('path');
 //  Inquirer package
 const inquirer = require('inquirer');
-
+// lib files
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require("./lib/Intern");
+// directory and path to main.html
+const dist_output = path.resolve(__dirname, "dist");
+const distPath = path.join(dist_output, "main.html");
+// returns the path to file dist/main.html
+console.log(distPath);
+// team members roster stored as an object
+const teamRoster = [];
 
-// use Inquire to create collect team member info
-// create objects for team member 
-const teamData = [];
-
-function startIntake() {
-	// start manager input
-	//managerIntake();
-	internIntake();
-
-};
-/* Manager inquire intake
-function managerIntake() {
-	inquirer.prompt([
-		{
-			type: "input",
-			name: "name",
-			message: "What is the team Manager's name?"
-		},
-		{
-			type: "input",
-			name: "id",
-			message: "Manager's Id ",
-			number: "",
-		},
-		{
-			type: "input",
-			name: "email",
-			message: "Manager's Email",
-			email: "",
-		},
-		{
-			type: "input",
-			name: "officeNumber",
-			message: "Manager's office number"
-		},
-	])
-		.then((val) => {
-			const manager = new Manager(
-				val.name,
-				val.id,
-				val.email,
-				val.officeNumber
-			);
-			// table for manager intake
-			console.table(manager);
-			// add manager data to 'teamData obj.
-			teamData.push(manager);
-			//check for teamData in console
-			console.log(teamData);
-		});
-};*/
-// engineer intake inquirer
-function engineerIntake() {
+// Team Objects created with Inquirer
+// Manager
+function managerObject() {
 	inquirer
 		.prompt([
 			{
 				type: "input",
 				name: "name",
-				message: "What is the Engineer's name?",
+				message: "Enter manager's name",
+
+
 			},
 			{
 				type: "input",
 				name: "id",
-				message: "What is the Engineer's ID number?",
+				message: "Enter manager's ID number:",
 			},
 			{
 				type: "input",
 				name: "email",
-				message: "What is the Engineer's email address?",
+				message: "Manager's email address:"
 			},
 			{
 				type: "input",
 				name: "github",
-				message: "What is the Engineer's GitHub Username?",
+				message: "What is the manager's GitHub Username?",
 			},
-
 		])
 		.then((val) => {
-			// ref Engineer constructor
-			const engineer = new Engineer(val.name, val.id, val.email, val.github);
-			// table for engineer object
-			console.table(engineer);
-			// push to team object
-			teamData.push(engineer);
-			// check teamData in console
-			console.log(teamData);
-			// run EngineerIntake func for check
+			const manager = new Manager(val.name, val.id, val.email, val.github);
+			console.table(manager);
+			teamRoster.push(manager);
+			addToRoster();
 
-
-
-		});
-
-
+		})
 };
+// Engineer
 
-function internIntake() {
+function engineerObject() {
 	inquirer
 		.prompt([
 			{
 				type: "input",
 				name: "name",
-				message: "What is Intern's name?",
+				message: "Enter engineer's name",
+
+
 			},
 			{
 				type: "input",
 				name: "id",
-				message: "What is Intern's ID number",
+				message: "Enter engineer's ID number:",
 			},
 			{
 				type: "input",
 				name: "email",
-				message: "What is Intern's email address?",
+				message: "Engineer's email address:"
 			},
 			{
 				type: "input",
-				name: "school",
-				message: "What school did Intern attend or is presently enrolled?"
+				name: "github",
+				message: "What is the engineer's GitHub Username?",
 			},
 		])
 		.then((val) => {
-			// ref Intern constructor
+			const engineer = new Engineer(val.name, val.id, val.email, val.github);
+			console.table(engineer);
+			teamRoster.push(engineer);
+			addToRoster()
+		})
+};
+
+
+// Intern
+function internObject() {
+	inquirer
+		.prompt([
+			{
+				type: "input",
+				name: "name",
+				message: "Enter engineer's name",
+
+
+			},
+			{
+				type: "input",
+				name: "id",
+				message: "Enter engineer's ID number:",
+			},
+			{
+				type: "input",
+				name: "email",
+				message: "Engineer's email address:"
+			},
+			{
+				type: "input",
+				name: "github",
+				message: "What is the engineer's GitHub Username?",
+			},
+		])
+		.then((val) => {
 			const intern = new Intern(val.name, val.id, val.email, val.school);
-			//create table
 			console.table(intern);
-			// push intern to teamDAta object
-			teamData.push(intern);
-			//check in console
-			console.log(teamData);
+			teamRoster.push(intern);
+			addToRoster();
 		});
+};
+
+function addToRoster() {
+	inquirer
+		.prompt([
+			{
+				type: "list",
+				name: "Team_add_role",
+				message: "Choose Engineer of Intern to add an employee to the Team Roster",
+				choices: ["Engineer", "Intern", "No additions to employee roster"],
+			},
+		])
+		.then((val) => {
+			if (val.Team_add_role === "Engineer") {
+				engineerObject();
+			} else if (val.Team_add_role === "Intern") {
+				internObject();
+			} else {
+				outputRoster();
+			}
+		});
+
+
+
+
+
+	function outputRoster() {
+		if (!fs.existsSync(template_Dir)) {
+			console.log(' no file exists')
+		} else {
+			console.log('exists')
+		}
+	};
 }
-
-// invoke for intake start inquirer
-startIntake();
-
-
