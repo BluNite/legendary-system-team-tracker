@@ -10,7 +10,7 @@ test("Should represent an instance of class Employee", () => {
 test("Should set name using constructor argument", () => {
 	const name = "Bob";
 	const e = new Employee(name);
-	expect(e.name) === (name);
+	expect(e.name).toBe(name);
 
 });
 
@@ -18,7 +18,7 @@ test("Should set name using constructor argument", () => {
 test("Should set id  using constructor argument 'id' ", () => {
 	const testVal = 50;
 	const e = new Employee("Fizz", testVal);
-	expect(e.id) === (testVal);
+	expect(e.id).toBe(testVal);
 
 });
 
@@ -27,7 +27,7 @@ test("Should set id  using constructor argument 'id' ", () => {
 test("Should set email constructor argument 'email' ", () => {
 	const testVal = "MacTheFry@fakeMail.com";
 	const e = new Employee("Bob", 4, testVal);
-	expect(e.email) === (testVal);
+	expect(e.email).toBe(testVal);
 
 });
 
@@ -35,26 +35,26 @@ test("Should set email constructor argument 'email' ", () => {
 test("Should get name using getName()", () => {
 	const testVal = "Bob";
 	const e = new Employee(testVal);
-	expect(e.getName()) === (testVal);
+	expect(e.getName()).toBe(testVal);
 });
 
 // test should produce 'id' using getId() --check passed test
 test("Should get 'id' using getId()", () => {
 	const testVal = 55;
 	const e = new Employee("Fizz", testVal);
-	expect(e.getId()) === (testVal);
+	expect(e.getId()).toBe(testVal);
 });
 
 // test should produce 'email' using getMail() --check passed test
 test("Should get 'email' using getEmail()", () => {
 	const testVal = "MacTheFry@fakeMail.com";
 	const e = new Employee("FIzz", 50, testVal);
-	expect(e.getEmail()) === (testVal);
+	expect(e.getEmail()).toBe(testVal);
 });
 
 // test should produce role using getRole() --check passed test
 test("Should return /'Employee'/ using getRole()", () => {
 	const testVal = "Employee";
 	const e = new Employee("Fizz", "MacTheFry@fakeMail.com", 50);
-	expect(e.getRole()) === (testVal);
+	expect(e.getRole()).toBe(testVal);
 });

@@ -7,6 +7,7 @@ const inquirer = require('inquirer');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require("./lib/Intern");
+const renderHtml = require('./lib/renderToHtml');
 // directory and path to main.html
 const dist_output = path.resolve(__dirname, "dist");
 const distPath = path.join(dist_output, "main.html");
@@ -14,6 +15,9 @@ const distPath = path.join(dist_output, "main.html");
 console.log(distPath);
 // team members roster stored as an object
 const teamRoster = [];
+function runApp() {
+	managerObject();
+}
 
 // Team Objects created with Inquirer
 // Manager
@@ -39,12 +43,12 @@ function managerObject() {
 			},
 			{
 				type: "input",
-				name: "github",
-				message: "What is the manager's GitHub Username?",
+				name: "officeNumber",
+				message: "What is the manager's office number?",
 			},
 		])
 		.then((val) => {
-			const manager = new Manager(val.name, val.id, val.email, val.github);
+			const manager = new Manager(val.name, val.id, val.email, val.officeNumber);
 			console.table(manager);
 			teamRoster.push(manager);
 			addToRoster();
@@ -107,12 +111,12 @@ function internObject() {
 			{
 				type: "input",
 				name: "email",
-				message: "Engineer's email address:"
+				message: "Intern's email address:"
 			},
 			{
 				type: "input",
-				name: "github",
-				message: "What is the engineer's GitHub Username?",
+				name: "school",
+				message: "Where has or is the intern attending school?",
 			},
 		])
 		.then((val) => {
@@ -140,7 +144,7 @@ function addToRoster() {
 				internObject();
 			} else {
 				outputRoster();
-			}
+			};
 		});
 
 
@@ -148,10 +152,14 @@ function addToRoster() {
 
 
 	function outputRoster() {
-		if (!fs.existsSync(template_Dir)) {
-			console.log(' no file exists')
+		if (!fs.existsSync(dist_output)) {
+			fs.mkdirSync(dist_output)
 		} else {
-			console.log('exists')
+			fs.writeFileSync(distPath, renderHtml(teamRoster), "UTF-8");
+			console.log(teamRoster)
+			console.log("Your file has been created in the dist folder")
 		}
 	};
-}
+};
+
+runApp();

@@ -1,5 +1,5 @@
-<!--InternCard--------------------->
-<div class="card p-5 employee-card col-sm-4">
+<!--EmailCard--------------------->
+<div class="card m-5 border-primary employee-card col-sm-3">
   <div class="card text-center">
     <!--Header-->
     <div class="card-header">
@@ -19,15 +19,13 @@
         <div class="card-body">
           <!--Card title Position-->
           <h2 class="card-title">
-            <i class="fa fa-glasses" aria-hidden="true"></i>&nbsp;{{role}}
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;{{ role
+            }}
           </h2>
         </div>
-        <!--card picture/image-->
 
-        <!--card body team member name-->
-        <div class="card-body">
-          <!--team member name text-->
-        </div>
+        <!--card body-->
+        <div class="card-body"></div>
       </div>
     </div>
     <!--card body for list-->
@@ -48,7 +46,7 @@
         >
           Email:
 
-          <a href="sendto: {{ email }}">
+          <a href="mailto:{{ email }}">
             <span class="badge bg-primary rounded-pill">{{ email }} </span></a
           >
         </li>
@@ -56,6 +54,8 @@
           class="list-group-item d-flex justify-content-between align-items-center"
         >
           School: {{ school }}
+          <!--span ID-->
+          <span class="badge bg-primary rounded-pill">Harvard</span>
         </li>
       </ul>
     </div>

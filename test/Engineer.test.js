@@ -13,7 +13,7 @@ test("Should set GitHub account using constructor", () => {
 test("getRole() should return \"Engineer\"", () => {
 	const testVal = "Engineer";
 	const e = new Engineer("Fizz", 50, "engineer@test.com", "GitHubUser");
-	expect(e.getRole()) === testVal;
+	expect(e.getRole()).toBe(testVal);
 });
 
 
@@ -21,5 +21,5 @@ test("getRole() should return \"Engineer\"", () => {
 test("getGitHub() should return gitHub userName", () => {
 	const testVal = "engineer@test.com";
 	const e = new Engineer("Fizz", 50, "engineer@test.com", testVal);
-	expect(e.getGitHub()) === testVal;
+	expect(e.getGitHub()).toBe(testVal);
 });
